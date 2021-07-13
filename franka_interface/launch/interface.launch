@@ -65,6 +65,7 @@
     <include file="$(find panda_moveit_config)/launch/move_group.launch">
       <arg name="fake_execution" value="$(arg fake_execution)" />
       <arg name="load_gripper" value="$(arg load_gripper)" />
+      <arg name="load_camera_mount" value="$(arg load_camera_mount)" />
       <arg name="info" value="true" />
     </include>
     <group if="$(eval arg('load_demo_planning_scene') == true)">
